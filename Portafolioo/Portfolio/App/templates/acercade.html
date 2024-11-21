@@ -1,0 +1,44 @@
+{%extends 'base.html'%}
+{%load static%}  
+
+{%block content%}
+
+<title>{% block title %}Acerca de mi {% endblock %}</title>
+
+
+    
+    <div class="img-2"><img src="{% static '/img/portf.jpg' %}" alt=""> </div>
+    <section id="sobre-mi" class="p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Sobre Mí</h2>
+                    <p>Soy una persona proactiva, organizada y responsable ,con buenas relaciones interpersonales. <br>Siempre tengo la mejor disposicion para la realizacion de mis labores <br>Busco puesto de trabajo desafiante <br>Me gusta trabajar en equipo </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="educacion" class="p-5 bg-light">
+        <div class="container">
+            <h2>Educación y Formación</h2>
+            <p>Colegio secundario IPET N°57 "Comodoro Martin Rivadavia" <br>Cursando acutalmente 7°Año, especialidad Programacion  </p>
+        </div>
+    </section>
+
+    <section id="habilidades" class="p-5">
+        <div class="container">
+            <h2>Habilidades</h2>
+            <p>
+                Manejo distintos  lenguajes de programación,como por ejemplo: Javascript,Python,Html,Css
+                <br>Manejo distintas Base de datos ,como por ejemplo:Sql,Mongo Db
+                <br>Idioma Ingles Basico(escrito y oral)</p>
+        </div>
+    </section>
+
+
+
+
+
+    
+{%endblock%} 

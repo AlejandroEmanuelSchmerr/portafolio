@@ -1,0 +1,235 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #0073e6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 15px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f8f9fa;
+}
+
+main {
+    flex: 1;
+    padding: 20px 0;
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+}
+
+.social-container {
+    margin-top: 10px;
+}
+
+.social-icon {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #007bff;
+}
+
+#sobre-mi, #educacion, #habilidades {
+    background-color: #000000;
+}
+
+h2, p {
+    color: white;
+} 
+
+
+h1 {
+    
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #007bff; 
+    color: #ffffff; 
+}
+
+form textarea {
+    height: 150px;
+}
+
+form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+.form-text {
+    color: #ffffff;
+}
+
+.img-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.img-1 img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.img-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-2 img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 60px 0; 
+}
+
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white; 
+}
+section h3 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white; 
+}
+section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: center;
+    color: white;
+    margin: 0px 10px;
+}
+
+#sobre-mi {
+    background-color: #000000;
+    box-shadow: 0 2px 4px #0073e6; 
+    border-radius: 8px; 
+    margin: 20px;
+}
+
+#educacion {
+    background-color: #000000;
+    box-shadow: 0 2px 4px #0073e6; 
+    border-radius: 8px;
+    margin: 20px;
+}
+
+#habilidades {
+    background-color: #000000;
+    box-shadow: 0 2px 4px #0073e6; 
+    border-radius: 8px; 
+    margin: 20px;
+}
+.img-proyecto1 {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    max-width: 600px !important;
+    margin: 20px auto !important;
+    overflow: hidden !important;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+.img-proyecto1 img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 300px !important;
+    border-radius: 8px !important;
+    display: block !important;
+    margin: 0 auto !important;
+    object-fit: cover !important;
+}
+.proyectoh1 {
+    font-size: 4.5em !important; 
+    text-align: center !important;
+    color: #ffffff !important;
+    margin-bottom: 20px !important;
+    font-weight: bold !important;
+}

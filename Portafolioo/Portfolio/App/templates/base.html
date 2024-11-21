@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}Inicio{% endblock %}</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/static/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <ul>
+          <li><a href="{% url 'Inicio' %}">Portada</a></li>
+          <li><a href="{% url 'Acercade' %}">Acerca de</a></li>
+          <li><a href="{% url 'Proyectos' %}">Proyectos</a></li>
+          <li><a href="{% url 'Contacto' %}">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">{% block content %} {% endblock %}</main>
+    <footer>
+      <div class="footer-container">
+        <div class="social-container">
+          <a
+            href="https://facebook.com/emanuelpirata.sanvicente/"
+            target="_blank"
+            class="social-icon"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://x.com/ema_sch06" target="_blank" class="social-icon"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://www.instagram.com/ema_cba7/"target="_blank"class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a  href="https://www.linkedin.com/in/alejandro-emanuel-schmer-05a75a236/"target="_blank"class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/AlejandroEmanuelSchmerr"target="_blank"class="social-icon"><i class="fab fa-github"></i></a>
+          <a
+            href="https://wa.me/5493518001358"
+            target="_blank"
+            class="social-icon"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

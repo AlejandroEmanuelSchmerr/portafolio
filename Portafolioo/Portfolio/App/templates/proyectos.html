@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Proyectos{% endblock %}
+
+{% block content %}
+<div class="proyect">
+    <h1 class="proyectoh1">Proyectos</h1>
+</div>
+{% for p in proyectos %}
+    <section>
+        <h2>Nombre del proyecto: {{ p.nombreproyecto }}</h2>
+        <p>Descripcion: {{ p.descripcion }}</p>
+        <p>Tecnologias: {{ p.tecnologias }}</p>
+        <p>Estado: {{ p.get_estado_display }}</p>
+        
+        <div class="img-proyecto1">
+            <img src="{{ p.imagen.url }}" alt="{{ p.nombreproyecto }}">
+        </div>
+        
+        {% if p.repositorio %}
+        <p><a href="{{ p.repositorio }}" target="_blank">Ver Proyecto</a></p>
+        {% endif %}
+    </section>
+{% endfor %}
+{% endblock %}
